@@ -1,6 +1,6 @@
 tier 1 cards:
 <div class="card-row">
-  <div class="card" *ngFor="let card of tier1Cards" (click)="pickCard(card)">
+  <div *ngFor="let card of tier1Cards" (click)="pickCard(card)">
     <app-card [Card]="card"></app-card>
   </div>
 </div>
@@ -26,9 +26,9 @@ gems:
 cards owned:
 
 <div class="card-row">
-  <div class="card" *ngFor="let card of player1.cards">
+  <ng-container *ngFor="let card of player1.cards">
     <app-card [Card]="card"></app-card>
-  </div>
+  </ng-container>
 </div>
 
 <hr>

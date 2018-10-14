@@ -16,9 +16,9 @@ import { GemList, RandomInt, RandomNonGoldGem } from "../gem/gem.component";
       </div>
       <div class="spacer"></div>
       <div class="requirements">
-        <div *ngFor="let gem of Card.GemsRequired.nonZero | keyvalue">
+        <ng-container *ngFor="let gem of Card.GemsRequired.nonZero | keyvalue">
           <app-gem [Type]="gem.key" [Count]="gem.value" [Small]="true"></app-gem>
-        </div>
+        </ng-container>
       </div>
     </div>`,
   styleUrls: ['./card.component.scss']
