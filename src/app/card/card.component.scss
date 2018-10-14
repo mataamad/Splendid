@@ -1,0 +1,29 @@
+
+.card {
+    border: 1px solid black;
+    width: 140px;
+    height: 160px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.points {
+    display: flex;
+    font-size: 50px;
+    position: relative;
+}
+
+.gives {
+    display: flex;
+}
+
+.requirements {
+    display: flex;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}

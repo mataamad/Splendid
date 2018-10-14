@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 3px;
+}
+
+$size: 20px;
+.diamond {
+    width: 0;
+    height: 0;
+    border: $size solid transparent;
+    border-bottom-color: red;
+    position: relative;
+    top: -$size;
+}
+.diamond:after {
+    content: '';
+    position: absolute;
+    left: -$size;
+    top: $size;
+    width: 0;
+    height: 0;
+    border: $size solid transparent;
+    border-top-color: red;
+}
+
+.small {
+    top: -$size/2;
+    border-width: $size/2;
+}
+.small:after {
+    left: -$size/2;
+    top: $size/2;
+    border-width: $size/2;
+}
+
+.black {
+    border-bottom-color: black;
+}
+.black:after {
+    border-top-color: black;
+}
+
+.blue {
+    border-bottom-color: blue;
+}
+.blue:after {
+    border-top-color: blue;
+}
+
+.green {
+    border-bottom-color: green;
+}
+.green:after {
+    border-top-color: green;
+}
+
+.red {
+    border-bottom-color: red;
+}
+.red:after {
+    border-top-color: red;
+}
+
+.white {
+    border-bottom-color: gray;
+}
+.white:after {
+    border-top-color: gray;
+}
+
+.gold {
+    border-bottom-color: gold;
+}
+.gold:after {
+    border-top-color: gold;
+}
+
+.none {
+    opacity: 0.2;
+}
